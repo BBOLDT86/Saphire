@@ -21,7 +21,7 @@ MENU = "menu"
 COMMAND = "command"
 
 menu_data = {
-  'title': "AlmondOS Alpha 4.0", 'type': MENU, 'subtitle': "Please select an option...",
+  'title': "Almond Network", 'type': MENU, 'subtitle': " You are connected to the almond network, enjoy",
   'options': [
     {
       'title': "Iphone Tethering", 'type': MENU, 'subtitle': "Please selection an option...",
@@ -47,8 +47,8 @@ menu_data = {
         },
       ]
     },
-    { 'title': "The Ur-Quan Masters", 'type': COMMAND, 'command': 'uqm' },
-    { 'title': "Windows 3.1", 'type': COMMAND, 'command': 'dosbox3 /path/to/my/win31/install/WINDOWS/WIN.COM -conf /path/to/my/special/dosbox2.conf -exit' },
+    { 'title': "Setup New Device", 'type': COMMAND, 'command': 'uqm' },
+    { 'title': "Almond Frame", 'type': COMMAND, 'command': 'dosbox3 /path/to/my/win31/install/WINDOWS/WIN.COM -conf /path/to/my/special/dosbox2.conf -exit' },
   ]
 }
 
