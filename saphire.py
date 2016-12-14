@@ -21,7 +21,7 @@ MENU = "menu"
 COMMAND = "command"
 
 menu_data = {
-  'title': "Almond Network", 'type': MENU, 'subtitle': " You are connected to the almond network, enjoy",
+  'title': "Almond Network", 'type': MENU, 'subtitle': " You are connected to the almond network, enjoy! ",
   'options': [
     {
       'title': "Iphone Tethering", 'type': MENU, 'subtitle': "Please selection an option...",
