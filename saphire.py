@@ -28,22 +28,15 @@ menu_data = {
       'title': "Iphone Tethering", 'type': MENU, 'subtitle': "Please selection an option...",
       'options': [
         { 'title': "Connect Iphone", 'type': COMMAND, 'command': 'sudo ifuse /media/iPhone' },
-	{ 'title': "Speed Test _ Not Working", 'type': COMMAND, 'wget --output-document=/dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip': '' },
+	{ 'title': "Speed Test _ Not Working", 'type': COMMAND, 'command' : 'wget --output-document=/dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip' },
        	{ 'title': "Install Iphone Tools ", 'type': COMMAND, 'command': 'sudo apt-get install gvfs ipheth-utils libimobiledevice-utils gvfs-backends gvfs-bin gvfs-fuse' },
 	{ 'title': "Check Connections ", 'type': COMMAND, 'command': 'ifconfig -s' },
 	{ 'title': "Edit Network Interfaces ", 'type': COMMAND, 'command': 'sudo nano /etc/network/interfaces' },
 	{ 'title': "Open Chrome", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
         { 'title': "Automate Connection Process for Iphone Part 2", 'type': COMMAND, 'command': 'sudo chmod 755 /lib/udev/iphoneconnect' },
-	{
-
-          
-          'title': "Connect to Wifi", 'type': MENU, 'subtitle': "",
-          'options': [
-            { 'title': "Open Raspberrypi.org Directions", 'type': COMMAND, 'sudo startx chromium-browser --kiosk https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md': '' },
-            { 'title': "Step 1, Paste the texts this menu button writes into the WPA Supplicant in Nano", 'type': COMMAND, 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf network={
-    ssid="The_ESSID_from_earlier"
-    psk="Your_wifi_password"
-}': '' }
+	{ 'title': "Connect to Wifi", 'type': MENU, 'subtitle': "", 'options': [
+            { 'title': "Open Raspberrypi.org Directions", 'type': COMMAND, 'command' : 'sudo startx chromium-browser --kiosk https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md': '' },
+            { 'title': "Step 1, Paste the texts this menu button writes into the WPA Supplicant in Nano", 'type': COMMAND, 'comand' : 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf network={ ssid="The_ESSID_from_earlier" psk="Your_wifi_password"}'}
           ]
         },
       ]
