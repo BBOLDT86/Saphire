@@ -4,6 +4,7 @@
 # Topmenu and the submenus are based of the example found at this location http://blog.skeltonnetworks.com/2010/03/python-curses-custom-menu/
 # The rest of the work was done by Matthew Bennett and he requests you keep these two mentions when you reuse the code :-)
 # Basic code refactoring by Andrew Scheller
+# Additional Features added by Brad Boldt 12/14/2016
 
 import curses, os #curses is the interface for capturing key presses on the menu, os launches the files
 screen = curses.initscr() #initializes a new window for capturing key presses
@@ -13,7 +14,7 @@ curses.start_color() # Lets you use colors when highlighting selected menu optio
 screen.keypad(1) # Capture input from keypad
 
 # Change this to use different colors when highlighting
-curses.init_pair(1,curses.COLOR_BLACK, curses.COLOR_WHITE) # Sets up color pair #1, it does black text with white background 
+curses.init_pair(1,curses.COLOR_BLUE, curses.COLOR_WHITE) # Sets up color pair #1, it does Bue text with white background 
 h = curses.color_pair(1) #h is the coloring for a highlighted menu option
 n = curses.A_NORMAL #n is the coloring for a non highlighted menu option
 
@@ -21,13 +22,13 @@ MENU = "menu"
 COMMAND = "command"
 
 menu_data = {
-  'title': "Almond Network", 'type': MENU, 'subtitle': " You are connected to the almond network, enjoy! ",
+  'title': "Almond Network", 'type': MENU, 'subtitle': "  ",
   'options': [
     {
       'title': "Iphone Tethering", 'type': MENU, 'subtitle': "Please selection an option...",
       'options': [
         { 'title': "Connect Iphone", 'type': COMMAND, 'command': 'sudo ifuse /media/iPhone' },
-	{ 'title': "Speed Test", 'type': COMMAND, 'wget --output-document=/dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip': '' },
+	{ 'title': "Speed Test _ Not Working", 'type': COMMAND, 'wget --output-document=/dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip': '' },
        	{ 'title': "Install Iphone Tools ", 'type': COMMAND, 'command': 'sudo apt-get install gvfs ipheth-utils libimobiledevice-utils gvfs-backends gvfs-bin gvfs-fuse' },
 	{ 'title': "Check Connections ", 'type': COMMAND, 'command': 'ifconfig -s' },
 	{ 'title': "Edit Network Interfaces ", 'type': COMMAND, 'command': 'sudo nano /etc/network/interfaces' },
@@ -36,13 +37,13 @@ menu_data = {
 	{
 
           
-          'title': "Sub Sub Menu Example", 'type': MENU, 'subtitle': "This is a sub-sub menu example!",
+          'title': "Connect to Wifi", 'type': MENU, 'subtitle': "",
           'options': [
-            { 'title': "Tetris", 'type': COMMAND, 'wget --output-document=/dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip': '' },
-            { 'title': "Monopoly", 'type': COMMAND, 'command': '' },
-            { 'title': "Ridge Racer", 'type': COMMAND, 'command': '' },
-            { 'title': "Snake", 'type': COMMAND, 'command': '' },
-            { 'title': "Space Invaders", 'type': COMMAND, 'command': '' },
+            { 'title': "Open Raspberrypi.org Directions", 'type': COMMAND, 'sudo startx chromium-browser --kiosk https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md': '' },
+            { 'title': "Step 1, Paste the texts this menu button writes into the WPA Supplicant in Nano", 'type': COMMAND, 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf network={
+    ssid="The_ESSID_from_earlier"
+    psk="Your_wifi_password"
+}': '' }
           ]
         },
       ]
