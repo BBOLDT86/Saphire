@@ -39,7 +39,7 @@ menu_data = {
             { 'title': "Step 1, Paste the texts this menu button writes into the WPA Supplicant in Nano", 'type': COMMAND, 'comand' : 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf network={ ssid="The_ESSID_from_earlier" psk="Your_wifi_password"}'}
           ]
         },
-      ]
+       ]
     },
     { 'title': "Setup New Device", 'type': COMMAND, 'command': 'uqm' },
     { 'title': "Almond Frame", 'type': COMMAND, 'command': 'dosbox3 /path/to/my/win31/install/WINDOWS/WIN.COM -conf /path/to/my/special/dosbox2.conf -exit' },
