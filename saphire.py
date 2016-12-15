@@ -42,6 +42,7 @@ menu_data = {
        ]
     },
     { 'title': "Setup New Device", 'type': COMMAND, 'command': 'uqm' },
+	  { 'title': "Create new .sh file to refresh menu", 'type': COMMAND, 'command': 'sudo nano saphire.sh cd Downloads' },
     { 'title': "Almond Frame", 'type': COMMAND, 'command': 'dosbox3 /path/to/my/win31/install/WINDOWS/WIN.COM -conf /path/to/my/special/dosbox2.conf -exit' },
   ]
 }
