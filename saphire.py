@@ -35,7 +35,7 @@ menu_data = {
 	{ 'title': "Open Chrome", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
         { 'title': "Automate Connection Process for Iphone Part 2", 'type': COMMAND, 'command': 'sudo chmod 755 /lib/udev/iphoneconnect' },
 	{ 'title': "Connect to Wifi", 'type': MENU, 'subtitle': "", 'options': [
-            { 'title': "Open Raspberrypi.org Directions", 'type': COMMAND, 'command' : 'sudo startx chromium-browser --kiosk https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md': '' },
+            { 'title': "Open Raspberrypi.org Directions", 'type': COMMAND, 'command' : 'sudo startx chromium-browser --kiosk https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md' },
             { 'title': "Step 1, Paste the texts this menu button writes into the WPA Supplicant in Nano", 'type': COMMAND, 'comand' : 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf network= ssid=The_ESSID_from_earlier psk='}
           ]
         },
