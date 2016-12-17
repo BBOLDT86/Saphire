@@ -81,7 +81,7 @@ def e_create():
       if choice.lower() == 'no':
 		go = False
       else: 
-    badinput = True
+	badinput = True
   s_edit()
   return
 
