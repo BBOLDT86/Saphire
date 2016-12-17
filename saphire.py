@@ -14,7 +14,7 @@ curses.start_color() # Lets you use colors when highlighting selected menu optio
 screen.keypad(1) # Capture input from keypad
 
 # Change this to use different colors when highlighting
-curses.init_pair(1,curses.COLOR_BLUE, curses.COLOR_WHITE) # Sets up color pair #1, it does Bue text with white background 
+curses.init_pair(1,curses.COLOR_BLUE, curses.COLOR_WHITE) # Sets up color pair #1, it does Blue text with white background 
 h = curses.color_pair(1) #h is the coloring for a highlighted menu option
 n = curses.A_NORMAL #n is the coloring for a non highlighted menu option
 
@@ -33,7 +33,16 @@ menu_data = {
 	{ 'title': "Check Connections ", 'type': COMMAND, 'command': 'ifconfig -s' },
 	{ 'title': "Edit Network Interfaces ", 'type': COMMAND, 'command': 'sudo nano /etc/network/interfaces' },
 	{ 'title': "Open Chrome", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
-        { 'title': "Automate Connection Process for Iphone Part 2", 'type': COMMAND, 'command': 'sudo chmod 755 /lib/udev/iphoneconnect' },
+     { 'title': "Open Chrome", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
+     { 'title': "Open Fav Website 2 ", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
+	      { 'title': "Open Fav Website 3", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
+	      { 'title': ""Open Fav Website 4", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
+	      { 'title': ""Open Fav Website 5", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
+	      { 'title': ""Open Fav Website 6", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
+	      { 'title': ""Open Fav Website 7"Open Fav Website 2", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
+	      { 'title': ""Open Fav Website 8", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  www.google.com' },
+	      
+	      { 'title': "Automate Connection Process for Iphone Part 2", 'type': COMMAND, 'command': 'sudo chmod 755 /lib/udev/iphoneconnect' },
 	
 	{ 'title': "Connect to Wifi", 'type': MENU, 'subtitle': "", 'options': [
         { 'title': "Open Raspberrypi.org Directions", 'type': COMMAND, 'command' : 'sudo startx chromium-browser --kiosk https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md' },
