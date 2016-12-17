@@ -79,7 +79,7 @@ def e_create():
       user_menu_items.append(additem)
     else:
       if choice.lower() == 'no':
-      go = False
+		go = False
       else: 
     badinput = True
   s_edit()
