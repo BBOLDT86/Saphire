@@ -36,12 +36,11 @@ menu_data = {
      { 'title': "Open Chrome", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
      { 'title': "Open Fav Website 2 ", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
 	      { 'title': "Open Fav Website 3", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	      { 'title': ""Open Fav Website 4", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	      { 'title': ""Open Fav Website 5", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	      { 'title': ""Open Fav Website 6", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	      { 'title': ""Open Fav Website 7"Open Fav Website 2", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	      { 'title': ""Open Fav Website 8", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	      
+	      { 'title': "Open Fav Website 4", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
+	      { 'title': "Open Fav Website 5", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
+	      { 'title': "Open Fav Website 6", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
+	      { 'title': "Open Fav Website 7", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
+	      { 'title': "Open Fav Website 8", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
 	      { 'title': "Automate Connection Process for Iphone Part 2", 'type': COMMAND, 'command': 'sudo chmod 755 /lib/udev/iphoneconnect' },
 	
 	{ 'title': "Connect to Wifi", 'type': MENU, 'subtitle': "", 'options': [
