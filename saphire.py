@@ -49,12 +49,8 @@ menu_data = {
     },
 	  { 'title': "Install Kodi 16 Jarvis", 'type':  MENU, 'subtitle': "",
           'options': [
-    { 'title': "Step 1: Add New Repository", 'type': COMMAND, 'command': 'echo 'deb http://pipplware.pplware.pt/pipplware/dists/jessie/main/binary /' | sudo tee --append /etc/apt/sources.list.d/pipplware_jessie.list' },
-    { 'title': "Step 2: Add Repositories Key", 'type': COMMAND, 'command': 'wget -O - http://pipplware.pplware.pt/pipplware/key.asc | sudo apt-key add -' },	  
-    { 'title': "Step 3: Update List of Available Packages", 'type': COMMAND, 'command': 'sudo apt-get update' },	  
-    { 'title': "Step 4: Install Kodi, If not installed", 'type': COMMAND, 'command': 'sudo apt-get install kodi' },	
-    { 'title': "Step 5: Get Upgrades", 'type': COMMAND, 'command': 'sudo apt-get upgrade' },
-    { 'title': "Step 6: Update Kodi to new Distribution", 'type': COMMAND, 'command': 'sudo apt-get dist-upgrade' },		  
+    { 'title': "Step 1: Downlaod Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/Kodi16.sh' },
+    { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh kodi16.sh' }		  
 	  ]
     }  
 	  
