@@ -1,10 +1,8 @@
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Topmenu and the submenus are based of the example found at this location http://blog.skeltonnetworks.com/2010/03/python-curses-custom-menu/
 # The rest of the work was done by Matthew Bennett and he requests you keep these two mentions when you reuse the code :-)
 # Basic code refactoring by Andrew Scheller
-# Additional Features added by Brad Boldt 12/14/2016
 
 import curses, os #curses is the interface for capturing key presses on the menu, os launches the files
 screen = curses.initscr() #initializes a new window for capturing key presses
@@ -14,7 +12,7 @@ curses.start_color() # Lets you use colors when highlighting selected menu optio
 screen.keypad(1) # Capture input from keypad
 
 # Change this to use different colors when highlighting
-curses.init_pair(1,curses.COLOR_BLUE, curses.COLOR_WHITE) # Sets up color pair #1, it does Blue text with white background 
+curses.init_pair(1,curses.COLOR_BLACK, curses.COLOR_WHITE) # Sets up color pair #1, it does black text with white background 
 h = curses.color_pair(1) #h is the coloring for a highlighted menu option
 n = curses.A_NORMAL #n is the coloring for a non highlighted menu option
 
@@ -22,30 +20,29 @@ MENU = "menu"
 COMMAND = "command"
 
 menu_data = {
-  'title': "Almond Network", 'type': MENU, 'subtitle': " Welcome to the Almond Network!   ",
+  'title': "Almond Network", 'type': MENU, 'subtitle': "Welcome to the Almond Network",
   'options': [
     {
-      'title': "Entertainment ", 'type': MENU, 'subtitle': "Movies, TV Shows, Video Games and More",
-      'options': [  
-        { 'title': "Kodi - Movies, TV Shows, ", 'type': COMMAND, 'command': 'kodi-standalone' },
-      	{ 'title': "Retro Pie", 'type': COMMAND, 'command': 'emulationsstation' },
-	{ 'title': "Netflix ", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser --kiosk http://www.google.com' }
-      ]
+      'title': "Entertainment", 'type': MENU, 'subtitle': "Shows, Movies, games and More",
+      'options': [
+        { 'title': "Kodi", 'type': COMMAND, 'command': 'kodi-standalone' },
+        { 'title': "Retro Pie", 'type': COMMAND, 'command': 'emulationstation' },
+	{
+          'title': "Websites", 'type': MENU, 'subtitle': "This is a sub-sub menu example!",
+          'options': [
+            { 'title': "Netflix", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser --kiosk http://www.netflix.com' },
+            { 'title': "Amazon Prime Movies", 'type': COMMAND, 'command': '' },
+            { 'title': "", 'type': COMMAND, 'command': '' },
+            { 'title': "Snake", 'type': COMMAND, 'command': '' },
+            { 'title': "Space Invaders", 'type': COMMAND, 'command': '' },
+          ]
         },
-{'title': "Setup", 'type': MENU, 'subtitle': "   ",
-  'options': [
-    {
-      'title': "Entertainment ", 'type': MENU, 'subtitle': "Movies, TV Shows, Video Games and More",
-      'options': [  
-        { 'title': "Kodi - Movies, TV Shows, ", 'type': COMMAND, 'command': 'kodi-standalone' },
-      	{ 'title': "Retro Pie", 'type': COMMAND, 'command': 'emulationsstation' },
-	{ 'title': "Netflix ", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser --kiosk http://www.google.com' }
-      ]	  
-}
+      ]
+    },
+    { 'title': "Setup and Installation", 'type': COMMAND, 'command': 'uqm' },
+    { 'title': "Sports News and Betting", 'type': COMMAND, 'command': 'dosbox3 /path/to/my/win31/install/WINDOWS/WIN.COM -conf /path/to/my/special/dosbox2.conf -exit' },
   ]
-	  }
-	  
-	 
+}
 
 # This function displays the appropriate menu and returns the option selected
 def runmenu(menu, parent):
@@ -119,4 +116,4 @@ def processmenu(menu, parent=None):
 
 # Main program  
 processmenu(menu_data)
-curses.endwin() #VITAL!  
+curses.endwin() #VITAL!  This closes out the menu system and returns you to the bash prompt.
