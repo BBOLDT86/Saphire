@@ -42,8 +42,26 @@ menu_data = {
     { 'title': "Setup and Installation", 'type':  MENU, 'subtitle': "",
           'options': [
     { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },
+    { 'title': "Setup Wifi Router Step 1, Install DHCP", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },	  
+    { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },	  
+    { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },	  
 	  ]
-    }
+    },
+	  { 'title': "Install Kodi 16 Jarvis", 'type':  MENU, 'subtitle': "",
+          'options': [
+    { 'title': "Step 1: Add New Repository", 'type': COMMAND, 'command': 'echo 'deb http://pipplware.pplware.pt/pipplware/dists/jessie/main/binary /' | sudo tee --append /etc/apt/sources.list.d/pipplware_jessie.list' },
+    { 'title': "Step 2: Add Repositories Key", 'type': COMMAND, 'command': 'wget -O - http://pipplware.pplware.pt/pipplware/key.asc | sudo apt-key add -' },	  
+    { 'title': "Step 3: Update List of Available Packages", 'type': COMMAND, 'command': 'sudo apt-get update' },	  
+    { 'title': "Step 4: Install Kodi, If not installed", 'type': COMMAND, 'command': 'sudo apt-get install kodi' },	
+    { 'title': "Step 5: Get Upgrades", 'type': COMMAND, 'command': 'sudo apt-get upgrade' },
+    { 'title': "Step 6: Update Kodi to new Distribution", 'type': COMMAND, 'command': 'sudo apt-get dist-upgrade' },		  
+	  ]
+    }  
+	  
+	  
+	  
+	  
+	  
 	  ]
 }
 
