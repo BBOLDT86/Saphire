@@ -22,41 +22,30 @@ MENU = "menu"
 COMMAND = "command"
 
 menu_data = {
-  'title': "Almond Network", 'type': MENU, 'subtitle': "  ",
+  'title': "Almond Network", 'type': MENU, 'subtitle': " Welcome to the Almond Network!   ",
   'options': [
     {
-      'title': "Iphone Tethering", 'type': MENU, 'subtitle': "Please selection an option...",
-      'options': [
-	      
-        { 'title': "Connect Iphone", 'type': COMMAND, 'command': 'sudo ifuse /media/iPhone' },
-      	{ 'title': "Install Iphone Tools ", 'type': COMMAND, 'command': 'sudo apt-get install gvfs ipheth-utils libimobiledevice-utils gvfs-backends gvfs-bin gvfs-fuse' },
-	{ 'title': "Check Connections ", 'type': COMMAND, 'command': 'ifconfig -s' },
-	{ 'title': "Edit Network Interfaces ", 'type': COMMAND, 'command': 'sudo nano /etc/network/interfaces' },
-	{ 'title': "Open Chrome", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-        { 'title': "Open Chrome", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-        { 'title': "Open Fav Website 2 ", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	{ 'title': "Open Fav Website 3", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	{ 'title': "Open Fav Website 4", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	{ 'title': "Open Fav Website 5", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	{ 'title': "Open Fav Website 6", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	{ 'title': "Open Fav Website 7", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	{ 'title': "Open Fav Website 8", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser  http://www.google.com' },
-	{ 'title': "Automate Connection Process for Iphone Part 2", 'type': COMMAND, 'command': 'sudo chmod 755 /lib/udev/iphoneconnect' },
-	{ 'title': "Connect to Wifi", 'type': MENU, 'subtitle': "", 'options': [
-        { 'title': "Open Raspberrypi.org Directions", 'type': COMMAND, 'command' : 'sudo startx chromium-browser --kiosk https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md' },
-       { 'title': "Open Network Config", 'type': COMMAND, 'command' : 'sudo nano /etc/network/interfaces' },
-        { 'title': "Open Raspberrypi.org Directions", 'type': COMMAND, 'command' : 'sudo startx chromium-browser --kiosk https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md' },
-     
-	{ 'title': "Step 1, Paste the texts this menu button writes into the WPA Supplicant in Nano", 'type': COMMAND, 'comand' : 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf network= ssid=The_ESSID_from_earlier psk='}
-          ]
+      'title': "Entertainment ", 'type': MENU, 'subtitle': "Movies, TV Shows, Video Games and More",
+      'options': [  
+        { 'title': "Kodi - Movies, TV Shows, ", 'type': COMMAND, 'command': 'kodi-standalone' },
+      	{ 'title': "Retro Pie", 'type': COMMAND, 'command': 'emulationsstation' },
+	{ 'title': "Netflix ", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser --kiosk http://www.google.com' }
+      ]
         },
-       ]
-    },
-    { 'title': "Setup New Device", 'type': COMMAND, 'command': 'uqm' },
-	  { 'title': "Create new .sh file to refresh menu", 'type': COMMAND, 'command': 'sudo nano saphire.sh cd Downloads' },
-    { 'title': "Almond Frame", 'type': COMMAND, 'command': 'dosbox3 /path/to/my/win31/install/WINDOWS/WIN.COM -conf /path/to/my/special/dosbox2.conf -exit' },
-  ]
+{'title': "Setup", 'type': MENU, 'subtitle': "   ",
+  'options': [
+    {
+      'title': "Entertainment ", 'type': MENU, 'subtitle': "Movies, TV Shows, Video Games and More",
+      'options': [  
+        { 'title': "Kodi - Movies, TV Shows, ", 'type': COMMAND, 'command': 'kodi-standalone' },
+      	{ 'title': "Retro Pie", 'type': COMMAND, 'command': 'emulationsstation' },
+	{ 'title': "Netflix ", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser --kiosk http://www.google.com' }
+      ]	  
 }
+  ]
+	  }
+	  
+	 
 
 # This function displays the appropriate menu and returns the option selected
 def runmenu(menu, parent):
