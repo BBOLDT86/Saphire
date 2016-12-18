@@ -30,7 +30,7 @@ menu_data = {
 	{
           'title': "Websites", 'type': MENU, 'subtitle': "This is a sub-sub menu example!",
           'options': [
-            { 'title': "Netflix - Disable GPU", 'type': COMMAND, 'command': 'startx /usr/bin/chromium-browser -disable-gpu http://www.netflix.com' },
+            { 'title': "Netflix - Disable GPU", 'type': COMMAND, 'command': 'startx chromium-browser -disable-gpu http://www.netflix.com' },
             { 'title': "Amazon Prime Movies", 'type': COMMAND, 'command': '' },
             { 'title': "", 'type': COMMAND, 'command': '' },
             { 'title': "Snake", 'type': COMMAND, 'command': '' },
