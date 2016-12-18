@@ -20,7 +20,9 @@ MENU = "menu"
 COMMAND = "command"
 
 menu_data = {
-  'title': "Almond Network", 'type': MENU, 'subtitle': "Welcome to the Almond Network",
+  'title': "Almond Network", 'type': MENU, 'subtitle': "Welcome to the Almond Network, 
+	
+	",
   'options': [
     {
       'title': "Entertainment", 'type': MENU, 'subtitle': "Shows, Movies, games and More",
