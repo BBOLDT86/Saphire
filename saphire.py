@@ -30,7 +30,7 @@ menu_data = {
 	{
           'title': "Websites", 'type': MENU, 'subtitle': "This is a sub-sub menu example!",
           'options': [
-            { 'title': "Netflix - Disable GPU", 'type': COMMAND, 'command': 'startx chromium-browser -disable-gpu http://www.netflix.com' },
+            { 'title': "Netflix", 'type': COMMAND, 'command': 'startx chrome-browser' },
             { 'title': "Amazon Prime Movies", 'type': COMMAND, 'command': '' },
             { 'title': "", 'type': COMMAND, 'command': '' },
             { 'title': "Snake", 'type': COMMAND, 'command': '' },
@@ -39,9 +39,12 @@ menu_data = {
         },
       ]
     },
-    { 'title': "Setup and Installation", 'type': COMMAND, 'command': 'uqm' },
-    { 'title': "Sports News and Betting", 'type': COMMAND, 'command': 'dosbox3 /path/to/my/win31/install/WINDOWS/WIN.COM -conf /path/to/my/special/dosbox2.conf -exit' },
-  ]
+    { 'title': "Setup and Installation", 'type':  MENU, 'subtitle': "",
+          'options': [
+    { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },
+	  ]
+    }
+	  ]
 }
 
 # This function displays the appropriate menu and returns the option selected
