@@ -27,3 +27,4 @@ sudo mount -t ext2 /dev/mapper/loop0p3 -o ro /home/pi/chromeos/
 cd /home/pi/chromeos/
 find ./ -type f -name "libwidevine*"
 sudo cp /home/pi/chromeos/libwidevine*.so /usr/lib/chromium-browser/
+sudo apt-get -f install
