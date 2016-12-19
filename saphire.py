@@ -30,11 +30,8 @@ menu_data = {
 	{
           'title': "Websites", 'type': MENU, 'subtitle': "This is a sub-sub menu example!",
           'options': [
-            { 'title': "Netflix", 'type': COMMAND, 'command': 'startx chrome-browser' },
-            { 'title': "Amazon Prime Movies", 'type': COMMAND, 'command': '' },
-            { 'title': "", 'type': COMMAND, 'command': '' },
-            { 'title': "Snake", 'type': COMMAND, 'command': '' },
-            { 'title': "Space Invaders", 'type': COMMAND, 'command': '' },
+            { 'title': "Netflix", 'type': COMMAND, 'command': 'startx /usr/bin/chrome' },
+            { 'title': "Amazon Prime Movies", 'type': COMMAND, 'command': 'startx /usr/bin/chrome' }
           ]
         },
       ]
@@ -42,9 +39,7 @@ menu_data = {
     { 'title': "Setup and Installation", 'type':  MENU, 'subtitle': "",
           'options': [
     { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },
-    { 'title': "Setup Wifi Router Step 1, Install DHCP", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },	  
-    { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },	  
-    { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },	  
+    { 'title': "Enter Wifi Password information", 'type': COMMAND, 'command': 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf' },	  	  
 	  ]
     },
 	  { 'title': "Install Kodi 16 Jarvis", 'type':  MENU, 'subtitle': "",
