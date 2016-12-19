@@ -30,8 +30,7 @@ menu_data = {
 	{
           'title': "Websites", 'type': MENU, 'subtitle': "This is a sub-sub menu example!",
           'options': [
-            { 'title': "Netflix", 'type': COMMAND, 'command': 'startx /usr/bin/chrome' },
-            { 'title': "Amazon Prime Movies", 'type': COMMAND, 'command': 'startx /usr/bin/chrome' }
+            { 'title': "Open Chrome Browser", 'type': COMMAND, 'command': 'startx chrome' },
           ]
         },
       ]
