@@ -20,7 +20,7 @@ MENU = "menu"
 COMMAND = "command"
 
 menu_data = {
-  'title': "Almond OS ", 'type': MENU, 'subtitle': "Welcome to the Almond Network",
+  'title': "Almond Network", 'type': MENU, 'subtitle': "Welcome to the Almond Network",
   'options': [
     {
       'title': "Entertainment", 'type': MENU, 'subtitle': "Shows, Movies, games and More",
@@ -30,8 +30,11 @@ menu_data = {
 	{
           'title': "Websites", 'type': MENU, 'subtitle': "This is a sub-sub menu example!",
           'options': [
-            { 'title': "Netflix", 'type': COMMAND, 'command': 'startx /usr/bin/chrome' },
-            { 'title': "Amazon Prime Movies", 'type': COMMAND, 'command': 'startx /usr/bin/chrome' },
+            { 'title': "Netflix", 'type': COMMAND, 'command': 'startx chrome-browser' },
+            { 'title': "Amazon Prime Movies", 'type': COMMAND, 'command': '' },
+            { 'title': "", 'type': COMMAND, 'command': '' },
+            { 'title': "Snake", 'type': COMMAND, 'command': '' },
+            { 'title': "Space Invaders", 'type': COMMAND, 'command': '' },
           ]
         },
       ]
@@ -41,49 +44,29 @@ menu_data = {
     { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },
     { 'title': "Setup Wifi Router Step 1, Install DHCP", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },	  
     { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },	  
-    { 'title': "First Run Setup Steps", 'type':  MENU, 'subtitle': "",	  
-	  'options' : [
-	  { 'title': "Step 1 Install Kodi 16 Jarvis", 'type':  MENU, 'subtitle': "",
+    { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },	  
+	  ]
+    },
+	  { 'title': "Install Kodi 16 Jarvis", 'type':  MENU, 'subtitle': "",
           'options': [
-    { 'title': "Step 1_a: Download Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/Kodi16.sh' },
-    { 'title': "Step 1_b: Run Install Script", 'type': COMMAND, 'command': 'sudo sh kodi16.sh' }		  
+    { 'title': "Step 1: Download Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/Kodi16.sh' },
+    { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh kodi16.sh' }		  
 	  ]
     },  
 	
-	  { 'title': " Step 2 Install RetroPie", 'type':  MENU, 'subtitle': "",
+	  { 'title': "Install RetroPie", 'type':  MENU, 'subtitle': "",
           'options': [
-    { 'title': "Step 2_a: Download Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/RetroPie.sh' },
-    { 'title': "Step 2_b: Run Install Script", 'type': COMMAND, 'command': 'sudo sh Retropie.sh' }		  
+    { 'title': "Step 1: Download Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/RetroPie.sh' },
+    { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh Retropie.sh' }		  
 	  ]
-    }, 
-	 { 'title': " Step 3 Raspi Config Settings", 'type':  MENU, 'subtitle': "",
-          'options': [
-    { 'title': "Step 3_a: Set GPU Memory to 256, Expand filesystem, Setup Keyboard and wifi country", 'type': COMMAND, 'command': 'sudo raspi-config' },		  
-	  ]
-    },	  
-	 { 'title': " Step 4 Setup Wifi Network", 'type':  MENU, 'subtitle': "",
-          'options': [
-    { 'title': "Enter Network name and Password", 'type': COMMAND, 'command': 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf' },
-	 { 'title': "Refresh Wifi Step one", 'type': COMMAND, 'command': 'sudo ifdown wlan0' },
-    { 'title': "Refresh Wifi Step two", 'type': COMMAND, 'command': 'sudo ifup wlan0' },	  
-		  
-		  
-	  ]
-    },	  
-		  
-		  
-	  ]
-    }
+    },   
+	  
 	  
 	  
 	  
 	  ]
 }
-  
-	  
-	  
-	  
-	  
+
 # This function displays the appropriate menu and returns the option selected
 def runmenu(menu, parent):
 
