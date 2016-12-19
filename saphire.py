@@ -51,7 +51,8 @@ menu_data = {
 	  { 'title': "Install RetroPie", 'type':  MENU, 'subtitle': "",
           'options': [
     { 'title': "Step 1: Download Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/RetroPie.sh' },
-    { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh Retropie.sh' }		  
+    { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh Retropie.sh' },
+    { 'title': "Step 3: Get Roms Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/copyroms.sh' },		  
 	  ]
     },   
 	  
