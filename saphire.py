@@ -61,6 +61,13 @@ menu_data = {
 	  ]
     },   
 	  
+	    { 'title': "Install Chrome 47 with Netflix Support", 'type':  MENU, 'subtitle': "",
+          'options': [
+    { 'title': "Step 1: Download Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/Chrome_netflix_pi.sh' },
+    { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh Chrome_netflix_pi.sh' }		  
+	  ]
+    }, 
+	  
 	  
 	  
 	  
