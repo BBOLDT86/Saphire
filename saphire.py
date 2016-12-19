@@ -79,11 +79,7 @@ menu_data = {
 	  
 	  ]
 }
-
-Expand Filesystem
-		Change User Password to Seven (pi / Seven) 
-		Setup Localization Options
-		Setup gpu memory split to 256GB	  
+  
 	  
 	  
 	  
