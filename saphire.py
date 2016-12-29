@@ -20,7 +20,7 @@ MENU = "menu"
 COMMAND = "command"
 
 menu_data = {
-  'title': "Almond Network", 'type': MENU, 'subtitle': "Welcome to the Almond Network",
+  'title': "Almond Network", 'type': MENU, 'subtitle': " ",
   'options': [
     {
       'title': "Entertainment", 'type': MENU, 'subtitle': "Shows, Movies, games and More",
@@ -38,7 +38,7 @@ menu_data = {
     { 'title': "Setup and Installation", 'type':  MENU, 'subtitle': "",
           'options': [
     { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },
-    { 'title': "Enter Wifi Password information", 'type': COMMAND, 'command': 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf' },	  	  
+    { 'title': "Enter Wifi Password information", 'type': COMMAND, 'command': 'sudo nano /etc/network/interfaces' },	  	  
 	 
 	  { 'title': "Install Kodi 16 Jarvis", 'type':  MENU, 'subtitle': "",
           'options': [
