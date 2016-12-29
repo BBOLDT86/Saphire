@@ -30,7 +30,7 @@ menu_data = {
 	{
           'title': "Websites", 'type': MENU, 'subtitle': "This is a sub-sub menu example!",
           'options': [
-            { 'title': "Open Chrome Browser", 'type': COMMAND, 'command': 'sudo startx chromium-browser' },
+            { 'title': "Open Chrome Browser", 'type': COMMAND, 'command': 'sudo startx /usr/bin/chromium-browser' },
           ]
         },
       ]
