@@ -39,8 +39,7 @@ menu_data = {
           'options': [
     { 'title': "Copy SD Card to SDA", 'type': COMMAND, 'command': 'sudo rpi-clone sda -v -x' },
     { 'title': "Enter Wifi Password information", 'type': COMMAND, 'command': 'sudo nano /etc/wpa_supplicant/wpa_supplicant.conf' },	  	  
-	  ]
-    },
+	 
 	  { 'title': "Install Kodi 16 Jarvis", 'type':  MENU, 'subtitle': "",
           'options': [
     { 'title': "Step 1: Download Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/Kodi16.sh' },
@@ -65,7 +64,8 @@ menu_data = {
 	  ]
     }, 
 	  
-	  
+	  ]
+    }, 
 	  
 	  
 	  ]
