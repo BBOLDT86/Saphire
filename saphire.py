@@ -26,7 +26,7 @@ menu_data = {
       'title': "Entertainment", 'type': MENU, 'subtitle': "Shows, Movies, games and More",
       'options': [
         { 'title': "Kodi", 'type': COMMAND, 'command': 'kodi-standalone' },
-        { 'title': "Retro Pie - Type emulationstation at prompt", 'type': COMMAND, 'command': 'sh /home/pi/emulationstation.sh' },
+        { 'title': "Retro Pie", 'type': COMMAND, 'command': 'sh /home/pi/emulationstation.sh' },
 	{
           'title': "Websites", 'type': MENU, 'subtitle': "This is a sub-sub menu example!",
           'options': [
