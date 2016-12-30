@@ -8,3 +8,6 @@ cd
 mkdir eth-test
 cd eth-test
 sudo curl https://raw.githubusercontent.com/BBOLDT86/Saphire/master/genesis.json
+cd
+mkdir eth-data
+geth --genesis genesis.json --datadir eth-data --networkid 123 --nodiscover --maxpeers 0 console
