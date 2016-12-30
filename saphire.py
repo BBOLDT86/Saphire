@@ -46,7 +46,12 @@ menu_data = {
     { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh kodi16.sh' }		  
 	  ]
     },  
-	
+	  { 'title': "Almond Mining Testing", 'type':  MENU, 'subtitle': "",
+          'options': [
+    { 'title': "Step 1: Ether Node", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/Step1EtherNode.sh' },
+    { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh kodi16.sh' }		  
+	  ]
+    },
 	  { 'title': "Install RetroPie", 'type':  MENU, 'subtitle': "",
           'options': [
     { 'title': "Step 1: Download Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/RetroPie.sh' },
