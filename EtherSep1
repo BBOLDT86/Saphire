@@ -7,4 +7,4 @@ sudo apt-get install -y ethereum
 cd
 mkdir eth-test
 cd eth-test
-nano genesis.json
+sudo curl https://raw.githubusercontent.com/BBOLDT86/Saphire/master/genesis.json
