@@ -48,7 +48,7 @@ menu_data = {
     },  
 	  { 'title': "Almond Mining Testing", 'type':  MENU, 'subtitle': "",
           'options': [
-    { 'title': "Step 1: Ether Node", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/Step1EtherNode.sh' },
+    { 'title': "Step 1: Ether Node", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/Etherstep1.sh' },
     { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh kodi16.sh' }		  
 	  ]
     },
