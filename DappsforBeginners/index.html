@@ -6,8 +6,12 @@
   
 <script type="text/javascript">
 ///First web3.eth.watch code to monitor coinbase
-  
-
+  web3.eth.watch('chain').changed(function(){
+  var coinbase = web3.eth.coinbase;
+  document.getElementById('coinbase').innerText = coinbase;
+  var balance = web3.eth.balanceAt(coinbase);
+  document.getElementById('balance').innerText = balance;
+});
 ///Insert your contract address var here:
  
 
