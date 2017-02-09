@@ -43,7 +43,8 @@ menu_data = {
 	  { 'title': "Install Kodi 16 Jarvis", 'type':  MENU, 'subtitle': "",
           'options': [
     { 'title': "Step 1: Download Install Script", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/BBOLDT86/Saphire/master/Kodi16.sh' },
-    { 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh kodi16.sh' }		  
+       { 'title': "Jasper Install", 'type': COMMAND, 'command': 'wget https://raw.githubusercontent.com/Howchoo/raspi-helpers/master/scripts/jasper-installer.sh },
+	{ 'title': "Step 2: Run Install Script", 'type': COMMAND, 'command': 'sudo sh kodi16.sh' }		  
 	  ]
     },  
 	  { 'title': "Almond Mining Testing", 'type':  MENU, 'subtitle': "",
