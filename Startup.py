@@ -23,7 +23,8 @@ menu_data = {
   'title': "Welcome to the Almond box! Please setup your Wifi Network by entering the ssid and password", 'type': MENU, 'subtitle': " ",
   'options': [
 
-    { 'title': "Enter Wifi Password information", 'type': COMMAND, 'command': 'sudo nano /etc/network/interfaces' },   
+    { 'title': "Enter Wifi Password information", 'type': COMMAND, 'command': 'sudo nano /etc/network/interfaces' },  
+    { 'title': "Update Launcher Menu", 'type': COMMAND, 'command': 'sudo sh /home/pi/update.sh' },   
     {
       'title': "Entertainment", 'type': MENU, 'subtitle': "Shows, Movies, games and More",
       'options': [
